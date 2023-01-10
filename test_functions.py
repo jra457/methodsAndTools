@@ -1,6 +1,5 @@
 from functions import openFile, numbers, dist, \
     isPalindrome, divide, sq, greetUser, displayItem
-
 import pytest
 
 # ~~~~~ openFile ~~~~~
