@@ -98,8 +98,6 @@ def test_greetUser(capsys):
     
     # Test functin call
     assert captured_stdout.strip() == "Hello!\nWelcome to the program Linus Benedict Torvalds\nGlad to have you!"
-
-
 # ~~~~~
 
 
