@@ -1,6 +1,6 @@
 import math
-import pytest
 
+# ~~~~~ openFile ~~~~~
 ## opens a file in read mode
 ## filename received as a parameter
 def openFile(filename):
@@ -8,12 +8,13 @@ def openFile(filename):
         infile = open(filename, "r")
 
         print("File opened.")
-        
+
     except:
         print("File not found.")
+# ~~~~~
         
 
-
+# ~~~~~ numbers ~~~~~
 ## takes two numbers and returns
 ## the result of a division
 def numbers(num1, num2):
@@ -26,7 +27,10 @@ def dist(x1, y1, x2, y2):
     dist = math.sqrt(dist)
 
     return dist
+# ~~~~~
 
+
+# ~~~~~ isPalindrome ~~~~~
 ## takes in a string -- reverses it
 ## then compares the two
 def isPalindrome(temp):
@@ -37,7 +41,10 @@ def isPalindrome(temp):
 
     else:
         return False
+# ~~~~~
 
+
+# ~~~~~ divide ~~~~~
 ## has input to receive two numbers
 ## divides the two, then outputs the result
 def divide():
@@ -47,11 +54,17 @@ def divide():
     div = num1 / num2
 
     print("Your numbers divided is:", div)
+# ~~~~~
 
+
+# ~~~~~ sq ~~~~~
 ## returns the squareroot of a particular number
 def sq(num):
     return math.sqrt(num)
+# ~~~~~
 
+
+# ~~~~~ greetUser ~~~~~
 ## grabs user's name
 ## greets them by their entire name
 ## names should be strings that only accept letters! (A-Z, a-z)
@@ -59,8 +72,12 @@ def greetUser(first, middle, last):
     print("Hello!")
     print("Welcome to the program", first, middle, last)
     print("Glad to have you!")
+# ~~~~~
 
+
+# ~~~~~ displayItem ~~~~~
 ## takes in a Python list
 ## attempts to display the item at the index provided
 def displayItem(numbers, index):
     print("Your item at", index, "index is", numbers[index])
+# ~~~~~
