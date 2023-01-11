@@ -8,6 +8,7 @@ def openFile(filename):
         infile = open(filename, "r")
 
         print("File opened.")
+        
     except:
         print("File not found.")
         
