@@ -48,12 +48,19 @@ def isPalindrome(temp):
 ## has input to receive two numbers
 ## divides the two, then outputs the result
 def divide():
-    num1 = int(input("Enter a number: "))
-    num2 = int(input("Enter another number: "))
+    try:
+        num1 = int(input("Enter a number: "))
+        num2 = int(input("Enter another number: "))
 
-    div = num1 / num2
+        div = num1 / num2
 
-    print("Your numbers divided is:", div)
+        print("Your numbers divided is:", div)
+
+    except ZeroDivisionError:
+        print("ZeroDivisionError: division by zero")
+
+    except ValueError:
+        print("ValueError: invalid literal for int() with base 10")
 # ~~~~~
 
 
