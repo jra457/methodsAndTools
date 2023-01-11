@@ -4,9 +4,14 @@ import pytest
 ## opens a file in read mode
 ## filename received as a parameter
 def openFile(filename):
-    infile = open(filename, "r")
+    try:
+        infile = open(filename, "r")
 
-    print("File opened.")
+        print("File opened.")
+    except:
+        print("File not found.")
+        
+
 
 ## takes two numbers and returns
 ## the result of a division
