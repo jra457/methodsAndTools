@@ -170,6 +170,33 @@ def test_sq():
 
     # Test functin call
     assert sq(4) == 2
+
+def test_sq_char(capsys):
+
+    # Test functin call
+    sq('a')
+
+    # Capture output
+    captured_stdout, captured_stderr = capsys.readouterr()
+    
+    # Test functin call
+    assert captured_stdout.strip() == "Value entered must be an integer"
+
+def test_sq_float():
+
+    # Test functin call
+    assert sq(4.0) == 2
+
+def test_sq_neg(capsys):
+
+    # Test functin call
+    sq(-49)
+
+        # Capture output
+    captured_stdout, captured_stderr = capsys.readouterr()
+    
+    # Test functin call
+    assert captured_stdout.strip() == "ValueError: invalid literal for int() with base 10"
 # ~~~~~
 
 
