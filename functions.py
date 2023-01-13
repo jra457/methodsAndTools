@@ -67,7 +67,17 @@ def divide():
 # ~~~~~ sq ~~~~~
 ## returns the squareroot of a particular number
 def sq(num):
-    return math.sqrt(num)
+
+    try:
+        sqrt = math.sqrt(num)
+        return(sqrt)
+        
+    except ValueError:
+        print("ValueError: invalid literal for int() with base 10")
+
+
+    except:
+        print("Value entered must be an integer")
 # ~~~~~
 
 
